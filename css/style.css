@@ -1,0 +1,224 @@
+
+
+:root{
+    --body-backgroud:rgba(241,241,241,1.0);
+    --link:#000;
+    --box-shadow:rgba(0, 0, 0, 0.15);
+
+    --branco:#fff;
+    --verde:#51b855;
+    --verde-claro:#5bd45f;
+    --vermelho:#e24949;
+    --azul: #1B1EA1;
+    --azul-claro: #282bca;
+    --cinza: #ccc;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:var(--body-backgroud);
+}
+a{
+  text-decoration: none;
+  color: val(--link);
+  margin-top: 0.35rem;
+}
+button{
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 0.35rem;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background:var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--box-shadow);
+    padding: 1rem;
+}
+.row{
+    padding: 20px;
+    text-align: center;
+    color: var(--vermelho);
+}
+
+.sucesso{
+	width: 100%;
+	text-align: center;
+	border-radius: 7px;
+	padding: 2px;
+    margin-top: 0.54rem;
+	background: var(--verde);
+	color: var(--branco);
+}
+
+.erro{
+	width: 100%;
+	text-align: center;
+	border-radius: 7px;
+	padding: 2px;
+    margin-top: 0.54rem;
+	background: var(--vermelho);
+	color: var(--branco);
+}
+
+.erro-campo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: var(--vermelho);
+    font-size: 0.7rem;
+}
+
+.logo{
+    width: 100%;
+    text-align: center;
+}
+
+.cadastro,
+.editar-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background:var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px var(--box-shadow);
+    padding: 30px;
+}
+
+.grupo-campo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.grupo-campo label{
+    display: flex;
+    flex-direction: row;
+    margin: 0.3rem;
+    width: 100%;
+}
+.grupo-campo label.msg{
+    display: flex;
+    flex-direction: row;
+    margin: 0.3rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.grupo-campo label .obrigatorio{
+    color: var(--vermelho);
+}
+.grupo-campo input{
+    padding: 0.2rem;
+    margin: 0.2rem;
+    min-width: 300px;
+    border: 1px solid var(--link);
+}
+
+.botao-campo button{
+    width: 100%;
+    background: var(--azul);
+    color: var(--branco);
+}
+
+.botao-campo button:hover{
+    width: 100%;
+    background: var( --azul-claro);
+    color: var(--cinza);
+}
+
+.lista{
+    margin-top: 0.25rem;
+    display: flex;
+    justify-content: end;
+}
+
+.cadastra-contato{
+    display: flex;
+    width: 95%;
+    justify-content: end;
+    margin: 1rem;
+}
+
+.cadastra-contato .botao-cadastro{
+    padding: 0.55rem;
+    background-color: var(--verde);
+    color: var(--branco);
+    border-radius: 5px;
+}
+
+.cadastra-contato .botao-cadastro:hover{
+    background-color: var(--verde-claro);
+}
+
+.cpf,
+.email{
+    display: none;
+}
+.lista-contato{
+    width: 100%;
+    padding: 1rem;
+}
+.lista-contato .mostra-lista{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.mostra-lista .tabela-titulo{
+    color: var(--branco);
+    background-color: var(--azul-claro);
+    display: flex;
+    flex-direction: row;
+    padding: 0.50rem;
+}
+.mostra-lista .tabela-titulo .titulo{
+    width: 100%;
+    text-align: center;
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+}
+.contatos .contato{
+    display: flex;
+    flex-direction: row;
+    padding: 0.50rem;
+    margin-top: 0.45rem;
+}
+.contatos .contato .info-contato{
+    width: 100%;
+    text-align: center;
+}
+.editar{
+    padding: 0.44rem;
+    margin-left: 0.22rem;
+    border-radius: 5px;
+    background-color: var(--verde);
+    color: var(--branco);
+}
+
+.excluir{
+    cursor: pointer;
+    padding: 0.44rem;
+    margin-left: 0.22rem;
+    border-radius: 5px;
+    background-color: var(--vermelho);
+    color: var(--branco);
+}
