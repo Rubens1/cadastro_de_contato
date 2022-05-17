@@ -1,9 +1,6 @@
 <?php
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
-  if($url != 'produto'){
-    $urlPar = explode('/',$url)[0];
-  }
-
+  
   if(isset($_GET['id'])){
     $id = $_GET['id'];
     $contato = MySql::conectar()->prepare("SELECT * FROM `tb_contato` WHERE id = ?");
