@@ -35,7 +35,7 @@
        if($url == 'home'){
           echo NOME_EMPRESA; 
         }else if($url == 'cadastro'){
-          echo 'Cadastrar usuário';
+          echo 'Cadastrar contato';
         }else if($url == 'editar'){
           echo 'Editar o contato do(a) '.$contato['nome'];
         } ?>
